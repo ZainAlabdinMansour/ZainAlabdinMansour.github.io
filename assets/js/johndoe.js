@@ -59,7 +59,18 @@ $(document).ready(function(){
         $('.navbar-toggler').addClass('collabsed');
         $('.navbar-toggler').attr('aria-expanded', 'false');
         $('#navbarSupportedContent').removeClass('show');
-    })
+    });
+
+    if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
+        console.log("mobile")
+        const p = document.createElement('p');
+        p.classList.add('mb-4');
+        p.textContent = 'Note: click on project for more details';
+        const sib = document.querySelector('#forNote');
+        sib.classList.remove('mb-4');
+        sib.classList.add('mb-1');
+        sib.insertAdjacentElement('afterend', p);
+    }
 });
 
 // protfolio filters
