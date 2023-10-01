@@ -47,6 +47,12 @@ $(document).ready(function(){
       let src = $(this).find('img').attr('src');
       window.open(src);
     });
+
+    $(".nav-link").on('click', () => {
+        $('.navbar-toggler').addClass('collabsed');
+        $('.navbar-toggler').attr('aria-expanded', 'false');
+        $('#navbarSupportedContent').removeClass('show');
+    })
 });
 
 // protfolio filters
