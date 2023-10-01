@@ -37,7 +37,7 @@ $(document).ready(function(){
         
           // Adjust the scroll position after scrolling is complete
           setTimeout(function() {
-            var scrollOffset = window.scrollY - 30; // Subtract 30 pixels from the current scroll position
+            var scrollOffset = window.scrollY; // Subtract 30 pixels from the current scroll position
             window.scrollTo({ top: scrollOffset, behavior: "smooth" });
           }, 700); // Adjust the timeout duration if needed
         }
