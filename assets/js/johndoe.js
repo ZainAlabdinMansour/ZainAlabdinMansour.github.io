@@ -48,6 +48,13 @@ $(document).ready(function(){
       window.open(src);
     });
 
+    $(".card2__button").on('click', function() {
+        let link = $(this).attr('link');
+        if(link){
+            window.open(link);
+        }
+    });
+    
     $(".nav-link").on('click', () => {
         $('.navbar-toggler').addClass('collabsed');
         $('.navbar-toggler').attr('aria-expanded', 'false');
